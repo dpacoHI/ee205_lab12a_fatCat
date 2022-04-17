@@ -24,9 +24,9 @@ static const std::string SLUG_LABEL = "Slug";
 class Weight {
 
 public: // Static Public Attributes
-    constexpr static const float UNKNOWN_WEIGHT = -1;
-    constexpr static const float KILOS_IN_A_POUND = .031081;
-    constexpr static const float SLUGS_IN_A_POUND = .453592;
+    static const float UNKNOWN_WEIGHT;
+    static const float KILOS_IN_A_POUND;
+    static const float SLUGS_IN_A_POUND;
 
 public: // Public Types
     enum UnitOfWeight{POUND, KILO, SLUG};
@@ -76,6 +76,8 @@ private: // Private Attributes
     float weight{};
     float maxWeight{};
 };
+
+
 
 
 #endif //EE205_LAB12A_FATCAT_WEIGHT_H
