@@ -35,7 +35,7 @@ public: // Public Member Functions
     Weight() noexcept;
     Weight(float newWeight);
     Weight(UnitOfWeight newUnitOfWeight) noexcept;
-    Weight(float newWeight, UnitOfWeight, newUnitOfWeight);
+    Weight(float newWeight, UnitOfWeight newUnitOfWeight);
     Weight(float newWeight, float newMaxWeight);
     Weight(UnitOfWeight newUnitOfWeight, float newMaxWeight);
     Weight(float newWeight, UnitOfWeight newUnitOfWeight, float newMaxWeight);
