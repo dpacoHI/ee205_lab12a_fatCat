@@ -16,19 +16,17 @@
 
 using namespace std;
 
-static const string POUND_LABEL = "Pound";
-static const string KILO_LABEL = "Kilo";
-static const string SLUG_LABEL = "Slug";
+static const std::string POUND_LABEL = "Pound";
+static const std::string KILO_LABEL = "Kilo";
+static const std::string SLUG_LABEL = "Slug";
+
 
 class Weight {
 
 public: // Static Public Attributes
     constexpr static const float UNKNOWN_WEIGHT = -1;
-    constexpr static const float KILOS_IN_A_POUND = .453592;
-    constexpr static const float SLUGS_IN_A_POUND = .031081;
-    /*static const string POUND_LABEL = "Pound";
-    static const string KILO_LABEL = "Kilo";
-    static const string SLUG_LABEL = "Slug";*/
+    constexpr static const float KILOS_IN_A_POUND = .031081;
+    constexpr static const float SLUGS_IN_A_POUND = .453592;
 
 public: // Public Types
     enum UnitOfWeight{POUND, KILO, SLUG};

@@ -11,9 +11,9 @@
 #include "Weight.h"
 using namespace std;
 
-const float Weight::UNKNOWN_WEIGHT = -1;
+/*const float Weight::UNKNOWN_WEIGHT = -1;
 const float Weight::SLUGS_IN_A_POUND = .031081;
-const float Weight::KILOS_IN_A_POUND = .453592;
+const float Weight::KILOS_IN_A_POUND = .453592;*/
 
 
 float Weight::fromKilogramToPound(float kilogram) noexcept {
