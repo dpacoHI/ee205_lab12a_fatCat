@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 ///         University of Hawaii, College of Engineering
-/// @brief  ee205_lab12a_fatCat - EE 205 - Spr 2022
+/// @brief  ee205_lab12a_fatWeight - EE 205 - Spr 2022
 ///
 /// @file Weight.h
 /// @version 1.0
@@ -8,11 +8,13 @@
 /// @author David Paco <dpaco@hawaii.edu>
 /// @date   11_Apr_2022
 ///////////////////////////////////////////////////////////////////////////////
-#ifndef EE205_LAB12A_FATCAT_WEIGHT_H
-#define EE205_LAB12A_FATCAT_WEIGHT_H
+#ifndef EE205_LAB12A_FATWeight_WEIGHT_H
+#define EE205_LAB12A_FATWeight_WEIGHT_H
 
 #include <string>
 #include <ostream>
+#define DEBUG
+#define FORMAT_LINE( className, member ) cout << setw(8) << (className) << setw(20) << (member) << setw(52)
 
 using namespace std;
 
@@ -70,7 +72,7 @@ private: // Private Member Functions
     void setMaxWeight(float newMaxWeight);
 
 private: // Private Attributes
-    bool blsKnown = false;
+    bool bIsKnown = false;
     bool bHasMax = false;
     enum UnitOfWeight unitOfWeight = POUND;
     float weight{};
@@ -80,4 +82,4 @@ private: // Private Attributes
 
 
 
-#endif //EE205_LAB12A_FATCAT_WEIGHT_H
+#endif //EE205_LAB12A_FATWeight_WEIGHT_H
