@@ -32,6 +32,7 @@ public: // Static Public Attributes
 
 public: // Public Types
     enum UnitOfWeight{POUND, KILO, SLUG};
+    Weight* next;
 
 public: // Public Member Functions
     Weight() noexcept;
@@ -41,6 +42,7 @@ public: // Public Member Functions
     Weight(float newWeight, float newMaxWeight);
     Weight(UnitOfWeight newUnitOfWeight, float newMaxWeight);
     Weight(float newWeight, UnitOfWeight newUnitOfWeight, float newMaxWeight);
+    //~Weight();
 
     bool isWeightKnown() const noexcept;
     bool hasMaxWeight() const noexcept;
@@ -59,7 +61,7 @@ public: // Public Member Functions
     void dump() const noexcept;
     bool operator==(const Weight & rhs_Weight) const;
     bool operator<(const Weight & rhs_Weight) const;
-    Weight & operator+=(float rhs_addToWeight);
+    Weight &operator+=(float &rhs_addToWeight);
 
 public: // Static Public Member Functions
     static float fromKilogramToPound(float kilogram) noexcept;
@@ -78,8 +80,6 @@ private: // Private Attributes
     float weight{};
     float maxWeight{};
 };
-
-
 
 
 #endif //EE205_LAB12A_FATWeight_WEIGHT_H
