@@ -195,7 +195,7 @@ Weight::Weight(Weight::UnitOfWeight newUnitOfWeight, float newMaxWeight) { // Cr
 
 Weight::Weight(float newWeight, Weight::UnitOfWeight newUnitOfWeight, float newMaxWeight) { // Create Weight with Value, Unit of Weight and Max Weight
     setMaxWeight(newMaxWeight);
-    setWeight(newWeight, newUnitOfWeight);
+    setWeight(newWeight);
     unitOfWeight = newUnitOfWeight;
 }
 // Operator Functions
